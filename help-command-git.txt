@@ -1,0 +1,8 @@
+git status = cek status
+git add <file name> = memasukkan file kedalam stagging
+git add . = memasukan semua file kedalam stagging
+git commit -m '<message>' = commit file
+git branch = cek semua branch
+git branch <name branch> =  menambahkan branch baru 
+git checkout <nama branch> = masuk kedalam branch
+git branch -d <nama branch> = menghapus branch
