@@ -1,0 +1,465 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  overflow-y: hidden;
+}
+
+.view {
+  overflow-y: unset;
+  cursor: default;
+}
+
+.hero {
+  position: relative;
+  min-height: 95vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow();
+  z-index: -1;
+  -webkit-filter: drop-shadow();
+}
+
+.hero h2,
+.hero h3,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.hero h3 {
+  font-size: 2rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: var(--pink);
+}
+
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+.home {
+  background-image: url(img/floral.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  width: 100%;
+  padding-top: 7rem;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.home h2,
+.info h2,
+.gifts h2,
+.story h2,
+.gallery h2,
+.rsvp h2 {
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.home h4 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p,
+.homr .couple p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple {
+  margin-top: 20px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 3rem;
+  color: var(--pink);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .desc {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.info a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.info a:hover {
+  color: white;
+  background-color: var(--pink);
+  box-shadow: var(--shadow);
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card .card-header {
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info .card .card-header .col-md-5 {
+  margin-top: 100px;
+}
+
+.story,
+.home,
+.gallery,
+.rsvp,
+.info,
+.gifts {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.gallery {
+  height: 100%;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.rsvp form label,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: var(--pink);
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-list {
+  font-size: 2rem;
+  color: var(--pink);
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  padding-top: 0.3rem;
+  position: relative;
+  text-align: end;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  width: 40%;
+  float: right;
+  padding-top: 0.3rem;
+  position: relative;
+  text-align: start;
+}
+
+.gallery {
+  background-image: url(img/floral.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 7rem;
+}
+
+.gallery .card {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.gallery .card img {
+  border: 5px solid #fff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp p,
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button {
+  color: white;
+  background-color: var(--pink);
+  width: 100%;
+  border: none;
+}
+
+.rsvp button:hover {
+  color: var(--pink);
+  background-color: white;
+  width: 100%;
+}
+
+.rsvp #comments {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white;
+}
+
+.rsvp .hasil {
+  max-height: 300px;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer dan Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.rsvp .hasil::-webkit-scrollbar {
+  display: none;
+}
+
+.rsvp .timestamp {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.rsvp p {
+  font-size: 1rem;
+}
+
+.gifts .card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.gifts .card-body {
+  padding: 15px;
+}
+
+.gifts .logo {
+  max-height: 4rem;
+  float: right;
+}
+
+.gifts .account-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gifts .copy-icon,
+.gifts p .bi-copy {
+  cursor: pointer;
+  color: #6c757d;
+}
+.gifts .copy-icon:hover {
+  color: #495057;
+}
+.gifts .number-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer {
+  background-color: var(--pink);
+  color: white;
+  padding: 3rem;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  -webkit-animation: rotating 4s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 50px;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 5px;
+  }
+
+  .myNavbar .nav-link {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+/* Handphone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 35px;
+    margin: 3px;
+  }
+}
