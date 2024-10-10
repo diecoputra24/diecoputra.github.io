@@ -5,4 +5,10 @@ git commit -m '<message>' = commit file
 git branch = cek semua branch
 git branch <name branch> =  menambahkan branch baru 
 git checkout <nama branch> = masuk kedalam branch
+git merge <nama branch> = me merge branch -ketik nama branch yang ingin diganbungkan dengan branch saat ini
+                          *jka masuk vim, gunakan :wq! untuk quit dan save, jika quit tanpa save gunakan :q!
+git branch --merged = cek branch mana yang sudah di merge
 git branch -d <nama branch> = menghapus branch
+git log = cek aktivitas di git
+git log --all --decorate --oneline --graph = cek grafik branch
+alias <nama alias>="<command yang ingin di alias>" = membuat command baru dari sebuah command bawaan
