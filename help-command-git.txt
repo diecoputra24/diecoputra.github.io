@@ -15,3 +15,8 @@ git log --all --decorate --oneline --graph = cek grafik branch
 alias <nama alias>="<command yang ingin di alias>" = membuat command baru dari sebuah command bawaan *hanya 1 sesi
 git checkout <7 diggit pertama commit> = memindahkan HEAD ke commit, keadaan saat di commit tersebut
                   *jika ingin kembali ke keadaan semula disebuah commit, dan ingin mengubah, tambahkan branch, agar tidak mengubah repo master
+git clone <clone https> = membuat clone dari sumber github
+git remote = cek nama remote
+git remote --v = cek 
+
+
