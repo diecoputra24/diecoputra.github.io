@@ -1,0 +1,17 @@
+git status = cek status
+git add <file name> = memasukkan file kedalam stagging area
+git add . = memasukan semua file kedalam stagging area
+git commit -m '<message>' = commit file
+git commmit -a -m '<message>' / git commit -am '<message>' = langsung commit jika statusnya modified
+git branch = cek semua branch
+git branch <name branch> =  menambahkan branch baru 
+git checkout <nama branch> = masuk kedalam branch
+git merge <nama branch> = me merge branch -ketik nama branch yang ingin diganbungkan dengan branch saat ini
+                          *jka masuk vim, gunakan :wq! untuk quit dan save, jika quit tanpa save gunakan :q!
+git branch --merged = cek branch mana yang sudah di merge
+git branch -d <nama branch> = menghapus branch
+git log = cek aktivitas di git
+git log --all --decorate --oneline --graph = cek grafik branch
+alias <nama alias>="<command yang ingin di alias>" = membuat command baru dari sebuah command bawaan *hanya 1 sesi
+git checkout <7 diggit pertama commit> = memindahkan HEAD ke commit, keadaan saat di commit tersebut
+                  *jika ingin kembali ke keadaan semula disebuah commit, dan ingin mengubah, tambahkan branch, agar tidak mengubah repo master
