@@ -1,3 +1,4 @@
+git init - menjadikan follder menjadi repository
 git status = cek status
 git add <file name> = memasukkan file kedalam stagging area
 git add . = memasukan semua file kedalam stagging area
@@ -17,6 +18,12 @@ git checkout <7 diggit pertama commit> = memindahkan HEAD ke commit, keadaan saa
                   *jika ingin kembali ke keadaan semula disebuah commit, dan ingin mengubah, tambahkan branch, agar tidak mengubah repo master
 git clone <clone https> = membuat clone dari sumber github
 git remote = cek nama remote
-git remote --v = cek 
-
-
+git remote --v = cek verbose lebih detail
+git config --global --unset http.proxy = jika clone tidak berhasil, atau pake https.proxy
+git push = push commit ke remote
+git config --list = cek list 
+git config --global user.name '<username github>' = menambahkan username di git desktop
+git config --global user.email '<email github>' = menambahkan email di git desktop
+git fetch = melihat status di remote
+git pull = mengambil merge confilict ke git kita
+git push -u origin <master/>main> = menghubungkan git dengan repo github
