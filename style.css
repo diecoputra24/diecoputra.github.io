@@ -455,6 +455,12 @@ footer li {
     text-align: center;
     font-size: 2rem;
   }
+
+  .hero main {
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* Handphone */
 @media (max-width: 576px) {
@@ -464,5 +470,9 @@ footer li {
   .simply-countdown > .simply-section {
     padding: 35px;
     margin: 3px;
+  }
+
+  .hero main {
+    padding-bottom: 10rem;
   }
 }
